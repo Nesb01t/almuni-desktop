@@ -1,0 +1,4 @@
+.base-window {
+    @apply w-full bg-base-100;
+    height: 100vh
+}

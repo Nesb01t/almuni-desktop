@@ -1,11 +1,10 @@
 import React from "react";
+import { BaseWindow } from "./window/base-window";
 
 function App() {
   return (
-    <div>
-      你好
-      <button className="btn w-64 rounded-full">按钮</button>
-    </div>
+    <BaseWindow>
+    </BaseWindow>
   );
 }
 

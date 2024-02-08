@@ -23,6 +23,7 @@
     "bundle": "tauri build"
   },
   "devDependencies": {
+    "@iconify/react": "^4.1.1",
     "@tauri-apps/cli": "^1.5.9",
     "@vitejs/plugin-react": "1.1.1",
     "autoprefixer": "^10.4.17",
