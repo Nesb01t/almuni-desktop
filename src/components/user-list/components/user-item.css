@@ -1,0 +1,15 @@
+.user-item{
+    @apply shadow-md;
+}
+
+.user-item__content {
+    @apply flex flex-wrap text-sm;
+}
+
+.user-item__content p {
+    @apply w-1/2 my-1 flex flex-wrap items-center gap-1
+}
+
+.user-item__content div {
+    @apply w-full my-1 flex flex-wrap items-center gap-1
+}

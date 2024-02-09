@@ -1,4 +1,4 @@
 .base-window {
-    @apply w-full bg-base-100;
-    height: 100vh
+    @apply w-full bg-base-100 flex flex-col items-center;
+    height: 100vh;
 }

@@ -1,0 +1,11 @@
+.user-list {
+    @apply w-full h-full p-2 flex flex-wrap overflow-scroll overflow-x-hidden;
+}
+
+.user-list__page {
+    @apply w-1/2;
+}
+
+.user-list__item {
+    @apply w-full p-2;
+}
