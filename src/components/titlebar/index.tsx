@@ -46,7 +46,7 @@ export const Titlebar: React.FC<IProps> = ({ onTabClick }) => {
   };
   // 没有交互的地方加上 drag-region
   return (
-    <div data-tauri-drag-region className="navbar">
+    <div data-tauri-drag-region className="navbar shadow-sm">
       {/* 左边 */}
       <div data-tauri-drag-region className="navbar-start">
         <a className="btn btn-ghost text-xl">Zust Cloud</a>
@@ -68,7 +68,7 @@ export const Titlebar: React.FC<IProps> = ({ onTabClick }) => {
         <a className="btn btn-ghost rounded-xl text-2xl">
           <Icon icon="material-symbols:settings-applications-outline-rounded" />
         </a>
-        <a className="btn btn-ghost rounded-xl text-2xl" onClick={()=>closeApplication()}>
+        <a className="btn btn-ghost rounded-xl text-2xl" onClick={() => closeApplication()}>
           <Icon icon="material-symbols:exit-to-app" />
         </a>
       </div>

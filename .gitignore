@@ -26,3 +26,4 @@ yarn-error.log*
 
 # additional files
 src-tauri/Cargo.lock
+/dist/

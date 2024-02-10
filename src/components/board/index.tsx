@@ -30,10 +30,10 @@ export const Board = () => {
     <div className="board">
       <div className="board__actions">
         <div className="text-md flex justify-center">筛选、确认及发送功能</div>
-        <div className="text-md flex justify-center">正在迅速开发中，敬请期待</div>
+        <div className="text-md flex justify-center">正在迅速开发中，敬请期待！</div>
       </div>
       <div className="board__messages">
-        {messages?.map(message => {
+        {messages?.reverse()?.map(message => {
           return (
             <MessageBubble message={message} />
           );

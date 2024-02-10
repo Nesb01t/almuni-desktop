@@ -12,8 +12,8 @@ export const UserItem: React.FC<IProps> = ({ user }) => {
     <div className="user-item collapse collapse-arrow bg-base-200">
       <input type="radio" name="my-accordion-2" />
 
-      <div className="collapse-title text-xl font-medium">
-        {user.name} <span className="text-sm text-gray-500 ml-1">{user.no}</span>
+      <div className="collapse-title text-lg font-medium">
+        {user.name} <span className="text-sm font-normal text-gray-600 ml-1">{user.no}</span>
       </div>
 
       <div className="collapse-content user-item__content">
