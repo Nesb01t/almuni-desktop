@@ -13,9 +13,6 @@ const login = async (data: LoginForm) => {
   }
 };
 
-interface IProps {
-}
-
 export const AuthWindow: React.FC = () => {
   const [form, setForm] = useState<LoginForm>({} as LoginForm);
   const authStore = useAuthStore();
