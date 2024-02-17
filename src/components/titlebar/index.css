@@ -1,0 +1,8 @@
+.menu-btn {
+    @apply btn btn-ghost w-12;
+    height: 100%;
+}
+
+.menu-btn__content {
+    @apply flex items-center justify-center;
+}

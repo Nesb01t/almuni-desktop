@@ -1,7 +1,9 @@
-import React, { ComponentType, useEffect, useRef, useState } from "react";
+import React, { ComponentType, useState } from "react";
 import { Icon } from "@iconify/react";
 import { MenuTab } from "./components/menu-tab";
 import { closeApplication } from "@/utils/window";
+import { ThemeController } from "@/components/theme";
+import { MenuBtn } from "@/components/titlebar/components/menu-btn";
 
 export enum MenuTabType {
   LIST = "list",
@@ -65,12 +67,13 @@ export const Titlebar: React.FC<IProps> = ({ onTabClick }) => {
 
       {/* 右边 */}
       <div data-tauri-drag-region className="navbar-end">
-        <a className="btn btn-ghost rounded-xl text-2xl">
-          <Icon icon="material-symbols:settings-applications-outline-rounded" />
-        </a>
-        <a className="btn btn-ghost rounded-xl text-2xl" onClick={() => closeApplication()}>
-          <Icon icon="material-symbols:exit-to-app" />
-        </a>
+        <MenuBtn><ThemeController size={20} /></MenuBtn>
+        <MenuBtn>
+          <Icon fontSize={20} icon="material-symbols:settings-applications-outline-rounded" />
+        </MenuBtn>
+        <MenuBtn onClick={() => closeApplication()}>
+          <Icon fontSize={20} icon="material-symbols:exit-to-app" />
+        </MenuBtn>
       </div>
     </div>
   );

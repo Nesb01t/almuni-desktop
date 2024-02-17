@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import "./index.css";
-import { DEFAULT_ACTIVE_TAB, IMenuTab, MenuTabType, Titlebar } from "../../components/titlebar";
-import { UserList } from "../../components/user-list";
-import { Profile } from "../../components/profile";
-import { Board } from "../../components/board";
+import { DEFAULT_ACTIVE_TAB, IMenuTab, MenuTabType, Titlebar } from "@/components/titlebar";
+import { UserList } from "@/views/user-list";
+import { Profile } from "@/views/profile";
+import { Board } from "@/views/board";
 
 export const BaseWindow = () => {
   const [activeTab, setActiveTab] = useState<IMenuTab>(DEFAULT_ACTIVE_TAB);

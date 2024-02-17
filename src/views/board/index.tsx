@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./index.css";
 import { Message } from "@/types/message";
 import axios from "axios";
-import { MessageBubble } from "@/components/board/components/message-bubble";
+import { MessageBubble } from "@/views/board/components/message-bubble";
 
 const fetchDataMessages = async () => {
   try {

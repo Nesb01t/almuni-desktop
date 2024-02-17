@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import "./index.css";
-import { UserItem } from "@/components/user-list/components/user-item";
+import { UserItem } from "@/views/user-list/components/user-item";
 import { User } from "@/types/user";
 import { Error } from "@/components/error";
 

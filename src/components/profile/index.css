@@ -1,7 +1,0 @@
-.profile {
-    @apply w-full h-full flex flex-col items-start;
-}
-
-.profile__variables {
-    @apply p-4;
-}
