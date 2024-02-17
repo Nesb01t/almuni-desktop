@@ -3,6 +3,7 @@ import { Icon } from "@iconify/react";
 import axios from "axios";
 import { LoginForm } from "@/window/auth-window/type";
 import { useAuthStore } from "@/store/auth";
+import { closeApplication } from "@/utils/window";
 
 const login = async (data: LoginForm) => {
   try {
@@ -35,6 +36,7 @@ export const AuthWindow: React.FC = () => {
     <>
       <div className="hero min-h-screen bg-base-200">
         <div className="hero-content flex-row-reverse">
+          {/* 右侧提示 */}
           <div className="ml-12">
             <h1 className="text-3xl font-bold flex gap-1.5 items-center">登入<Icon
               icon="line-md:moon-rising-filled-alt-loop" /></h1>
@@ -42,6 +44,7 @@ export const AuthWindow: React.FC = () => {
             <p className="pt-3">输入您的电子邮箱或学号</p>
           </div>
 
+          {/* 左侧表单 */}
           <div className="card shrink-0 shadow-2xl bg-base-100">
             <form className="card-body">
               <div className="form-control">
@@ -71,6 +74,11 @@ export const AuthWindow: React.FC = () => {
               </div>
             </form>
           </div>
+
+          <a className="btn btn-ghost text-base-content absolute top-4 right-4" onClick={() => closeApplication()}>
+            <Icon fontSize={25}
+                  icon="material-symbols:exit-to-app" />
+          </a>
         </div>
       </div>
     </>
