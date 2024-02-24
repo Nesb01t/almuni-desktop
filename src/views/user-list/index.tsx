@@ -4,6 +4,7 @@ import "./index.css";
 import { UserItem } from "@/views/user-list/components/user-item";
 import { User } from "@/types/user";
 import { Error } from "@/components/error";
+import { exportUser } from "@/utils/user/export";
 
 const fetchDataUsers = async () => {
   try {
